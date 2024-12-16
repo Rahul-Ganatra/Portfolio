@@ -1603,7 +1603,7 @@
                 font-size: 2rem;
                 font-weight: bold;
                 margin-bottom: 50px;
-                margin-left: 0px;
+                margin-left: 20px;
 
             }
         }
@@ -1827,15 +1827,16 @@
     <section id="opportunities" class="opportunities">
         <h3 class="section-title">LOOKING FOR OPPORTUNITIES</h3>
         <h2 class="opportunities-heading">FREELANCING & INTERNSHIP</h2>
-        <p>
-            I am actively seeking freelancing and internship opportunities in <a href="">FLUTTER APP DEVELOPMENT</a> and
-            <a href="">DATA SCIENCE</a>
+        <p class="opportunities-heading-text">
+            I am actively seeking freelancing and internship opportunities in <a href="" style="color: yellow;">FLUTTER
+                APP DEVELOPMENT</a> and
+            <a href="" style="color: yellow;">DATA SCIENCE</a>
             to further enhance my skills and gain practical experience in these fields.
             If you have any projects or positions available in these areas, please feel free to reach out to me.
         </p>
-        <p>
-            You can contact me via email at <a href="mailto:rahuljganatra07@gmail.com">rahuljganatra07@gmail.com</a> or
-            connect with me on my social media platforms.
+        <p class="opportunities-heading-text">
+            Contact me at <a href="mailto:rahuljganatra07@gmail.com"
+                style="color: orange; font-size: medium;">rahuljganatra07@gmail.com</a> or on social media.
         </p>
     </section>
 
@@ -1866,7 +1867,6 @@
                 <span>LinkedIn</span>
             </a>
 
-            <!-- Row 2 -->
             <a href="https://wa.me/9152251477" target="_blank" class="social-card">
                 <i class="fab fa-whatsapp"></i>
                 <span>WhatsApp</span>
@@ -2030,6 +2030,8 @@
                 display: flex;
                 flex-direction: column;
             }
+
+
         }
 
 
@@ -2048,6 +2050,14 @@
                 font-weight: bold;
                 margin-bottom: 50px;
                 margin-left: 20px;
+            }
+
+            .opportunities-heading-text {
+                max-width: 550px;
+                font-size: 1.2rem;
+                line-height: 1.8;
+                color: white;
+                text-align: justify;
 
             }
         }
@@ -2071,8 +2081,10 @@
             <div class="footer-section">
                 <h4>Contact</h4>
                 <ul>
-                    <li><i class="fas fa-envelope"></i> rahuljganatra07@gmail.com</li>
-                    <li><i class="fas fa-phone"></i> +91 9152251477</li>
+                    <li><i class="fas fa-envelope"></i><a
+                            href="mailto:rahuljganatra07@gmail.com">rahuljganatra07@gmail.com</a>
+                    </li>
+                    <li><i class="fas fa-phone"></i><a href="tel:+919152251477">+91 9152251477</a></li>
                     <li><i class="fas fa-map-marker-alt"></i> Mumbai, India</li>
                 </ul>
             </div>
