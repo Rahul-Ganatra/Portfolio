@@ -17,6 +17,14 @@
             box-sizing: border-box;
         }
 
+        /* Add this to your existing styles */
+        @media (max-width: 576px) {
+            body {
+                overflow-x: hidden;
+                /* Prevent horizontal scrolling */
+            }
+        }
+
         body {
             font-family: 'Roboto', sans-serif;
             color: #fff;
@@ -28,8 +36,8 @@
         /* Title Bar Styling */
         .navbar {
             display: flex;
-            justify-content: space-between;
             align-items: center;
+            justify-content: space-between;
             padding: 20px 40px;
             background-color: #000;
             position: fixed;
@@ -749,6 +757,7 @@
             .recent-experience,
             .connect-heading {
                 font-size: 2rem;
+
             }
 
             /* Navigation */
@@ -942,7 +951,7 @@
             .recent-experience,
             .connect-heading {
                 font-size: 2rem;
-                margin-left: 20px;
+                margin-left: 2s0px;
             }
 
             /* Grids */
@@ -990,7 +999,7 @@
 
             /* Aligning recent project text with other sections */
             .recent-projects {
-                text-align: center;
+                text-align: start;
                 margin-left: 20px;
             }
         }
@@ -1373,16 +1382,18 @@
 
 <body id="top">
     <nav class="navbar">
+
         <div class="name">
             <a href="#top">Rahul Jignesh Ganatra</a>
         </div>
-        <div class="nav-links">
-            <a href="#about-me">About Me</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#experience">Experience</a>
-            <a href="#opportunities">Opportunities</a>
-            <a href="#contact">Contact</a>
+        <div class="nav-links" id="nav-links">
+            <button class="close-btn" id="close-btn">&times;</button>
+            <a href="#about-me" class="nav-link">About Me</a>
+            <a href="#skills" class="nav-link">Skills</a>
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#experience" class="nav-link">Work Experience</a>
+            <a href="#opportunities" class="nav-link">Looking for Freelancing</a>
+            <a href="#contact" class="nav-link">Social</a>
         </div>
     </nav>
 
@@ -1671,7 +1682,7 @@
             display: flex;
             gap: 10px;
             flex-wrap: wrap;
-            justify-content: center;
+            justify-content: left;
             margin-bottom: 10px;
         }
 
@@ -1836,7 +1847,8 @@
         </p>
         <p class="opportunities-heading-text">
             Contact me at <a href="mailto:rahuljganatra07@gmail.com"
-                style="color: orange; font-size: medium;">rahuljganatra07@gmail.com</a> or on social media.
+                style="color: orange; font-size: small;">rahuljganatra07@gmail.com</a> or on
+            social media.
         </p>
     </section>
 
@@ -2178,11 +2190,7 @@
         document.querySelectorAll('section').forEach((section) => {
             observer.observe(section);
         });
-
         // Active nav link handling
-        const sections = document.querySelectorAll('section');
-        const navLinks = document.querySelectorAll('.navbar a');
-
         window.addEventListener('scroll', () => {
             let current = '';
 
@@ -2218,6 +2226,7 @@
             });
         });
     </script>
+
 </body>
 
 </html>
